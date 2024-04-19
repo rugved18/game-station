@@ -953,10 +953,10 @@ void display_board(){
     cout<<"PLAYER - 1 [X]\t PLAYER - 2 [O]\n\n";
     cout<<"\t\t     |     |     \n";
     cout<<"\t\t  "<<board[0][0]<<"  |  "<<board[0][1]<<"  |  "<<board[0][2]<<" \n";
-    cout<<"\t\t__|_|__\n";
+    cout<<"\t\t_||\n";
     cout<<"\t\t     |     |     \n";
     cout<<"\t\t  "<<board[1][0]<<"  |  "<<board[1][1]<<"  |  "<<board[1][2]<<" \n";
-    cout<<"\t\t__|_|__\n";
+    cout<<"\t\t_||\n";
     cout<<"\t\t     |     |     \n";
     cout<<"\t\t  "<<board[2][0]<<"  |  "<<board[2][1]<<"  |  "<<board[2][2]<<" \n";
     cout<<"\t\t     |     |     \n";
@@ -1075,9 +1075,10 @@ int main()
         cout<<endl;
         cout<<"Enter Player Name"<<endl;
         cin>>playerName1;
-
         cout<<endl;
-        cout<<"Hello  "<<playerName1<<"  Welcome "<<endl;
+        cout<<"the player name is "<<playerName1<<endl;
+        cout<<endl;
+        cout<<"Hello "<<playerName1<<" Welcome"<<endl;
 
         double sum = 0;
         double add = 1;
@@ -1090,7 +1091,7 @@ int main()
 
             clock_t end = clock();
             double elapsed = double(end - start)/CLOCKS_PER_SEC;
-            if(elapsed >= 500){
+            if(elapsed >= 10000){
                 cout<<"Time's UP .. !"<<endl;
                 exit(0);
             }
@@ -1146,14 +1147,16 @@ int main()
         cout<<endl;
         cout<<"Enter Player1 Name"<<endl;
         cin>>playerName1;
-
-
+        cout<<endl;
+        cout<<playerName1<<endl;
         cout<<"Enter Player2 Name"<<endl;
+        cout<<endl;
         cin>>playerName2;
+        cout<<playerName2<<endl;
+        cout<<"Hello "<<playerName1<<" and "<<playerName2<<" Welcome"<<endl;
 
-        cout<<"Hello  "<<playerName1<<"  and  "<<playerName2<<"  Welcome"<<endl;
-
-
+        double sum = 0;
+        double add = 1;
 
      // Start measuring time
         clock_t start = clock();
@@ -1163,7 +1166,7 @@ int main()
             clock_t end = clock();
                 double elapsed = double(end - start)/CLOCKS_PER_SEC;
                 cout<<elapsed<<endl;
-                if(elapsed >= 500){
+                if(elapsed >= 0.0010){
                     cout<<"Time's UP .. !"<<endl;
                     exit(0);
                 }
@@ -1206,13 +1209,6 @@ int main()
             }
 
             cout << endl;
-
-
-
-
-
-
-
         }
     }
 
